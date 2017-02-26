@@ -1170,10 +1170,8 @@ def Main():
     oParser.add_option('-j', '--json', action='store_true', default=False, help='jsonify certain outputs')
     (options, args) = oParser.parse_args()
 
-    print("argument s" + len(args))
 
     if len(args) != 1:
-        print("came here")
         oParser.print_help()
         print('')
         print('  %s' % __description__)
